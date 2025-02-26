@@ -1481,13 +1481,11 @@ function or(l, r)
 self.C3_ExpressionFuncs = [
 		() => "PlayGama",
 		() => "key_1",
-		() => 42,
-		() => "key_2",
-		() => "test",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0("key_1");
 		},
+		() => "key_2",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0("key_2");
@@ -1742,6 +1740,7 @@ self.C3_ExpressionFuncs = [
 		() => 8,
 		() => 9,
 		() => 10,
+		() => 11,
 		() => "Damage",
 		() => -717706215031807,
 		() => 0.2,
@@ -1767,7 +1766,6 @@ self.C3_ExpressionFuncs = [
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0(1, 100);
 		},
-		() => 11,
 		() => 16,
 		() => 31,
 		() => 41,
@@ -1802,6 +1800,8 @@ self.C3_ExpressionFuncs = [
 			return () => f0(1, 10);
 		},
 		() => 13,
+		() => 42,
+		() => "test",
 		() => -1,
 		() => 200,
 		() => "Main"
